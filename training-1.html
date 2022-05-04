@@ -22,10 +22,7 @@
                     <a href="#menu">.menu</a>
                 </li>
                 <li>
-                    <a href="#contatus">.contact us</a>
-                </li>
-                <li>
-                    <a href="#feedback">.feedback</a>
+                    <a href="#contactus">.contact us</a>
                 </li>
                 <li>
                     <a href="#delivery">.delivery</a>
@@ -36,11 +33,7 @@
         <main>
             <section id="home">
                                
-                <ul>
-                    <li>
-                        .home
-                    </li>
-                </ul>
+                <h3>.home</h3>
                 
                 <p>
                     <strong>Shaped by nature, enhanced by style</strong> <br> <br>
@@ -118,10 +111,51 @@
                 </table>
 
                 <h4>Dessert.</h4>
-                <tr>
-                    <td></td>
-                </tr>
+                <table>
+                    <tr>
+                        <td><img src="/img/dessert1.jpg" alt="Dessert1" width="400" height="auto">Bougatsa</td>
+                        <td><img src="/img/dessert2.jpg" alt="Dessert2" width="400" height="auto">Akanes</td>
+                        <td><img src="/img/dessert3.jpg" alt="Dessert3" width="400" height="auto">Kariokes</td>
+                    </tr>
+                </table>    
+            </section> <br> <br>
+
+            <section id="contactus">
+                <form method="POST" action="https://formspree.io/f/xbjwpkwo">
+                    <fieldset>
+                        <legend>Contact us if you want to book a table or leave a feedback!</legend>
+                        <div>
+                            <label>Service type</label> 
+                        </div>
+                        <div>
+                            <input list="service-list" type="text">
+                            <datalist id="service-list">
+                                <option value="Feedback">
+                                <option value="Booking">
+                            </datalist>
+                        </div>
+
+                        <div>
+                            <label for="text-field">Type your feedback or booking preferences here!</label> <br>
+                            <input type="text" name="text-field" id="service-text-field" required> <br>
+                            <label for="email-field">Leave your email here for us to contact you!</label> <br>
+                            <input type="email" name="email-field" id="service-text-field" required> <br>
+                            <label for="phone-field"> ... or your phone-number:</label> <br>
+                            <input type="tel" name="phone-number-field" id="service-text-field" required> <br>
+                        </div> <br>
+
+                        
+                        <button type="submit">Send</button>
+                    </fieldset>
+                </form>
             </section>
+
+            <section id="delivery">
+                <h3>.delivery</h3>
+                <h4>(only in the city borders of Athens)</h4>
+            </section>
+
+            <form action="https://formspree.io/f/xbjwpkwo" method="POST"></form>
 
 
 
