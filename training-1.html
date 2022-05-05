@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self-education</title>
     <link rel="icon" href="https://toppng.com/uploads/preview/background-education-logo-for-education-a-11563058486g8lcjy4wvq.png" type="image/x-icon">
+    <link rel="stylesheet" href="training-1.css">
 </head>
     <body>
         <div class="entry">
             <h1>I.V</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lOXzxpxrjHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="entry-video" width="560" height="315" src="https://www.youtube.com/embed/lOXzxpxrjHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <nav>
             <ul>
                 <li>
-                    <a href="#home">.home</a>
+                        <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="#menu">.menu</a>
+                        <a href="#menu">Menu</a>
                 </li>
                 <li>
-                    <a href="#contactus">.contact us</a>
+                        <a href="#contactus">Contact us</a>
                 </li>
                 <li>
-                    <a href="#delivery">.delivery</a>
+                        <a href="#feedbacks">Clients about us</a>
                 </li>
             </ul>
         </nav>
@@ -36,20 +37,21 @@
                 <h3>.home</h3>
                 
                 <p>
+                    <img src="/img/inside1.jpg" alt="Inside" width="1200" height="auto"><br>
                     <strong>Shaped by nature, enhanced by style</strong> <br> <br>
                     Inspired dining options exalted by authentic, Greek-influenced cuisine are available whether guests choose to eat in the privacy <br> 
                     of their own terrace or at one of Mystique’s restaurants. Most of the vegetables and herbs used to prepare the refined dishes at Mystique’s <br>
                     restaurants, are cultivated in the hotel’s organic farm in the village of Megalohori. Santorini’s rich volcanic soil combined <br>
-                    with the Mediterranean climate of the region, have proved nourishing sources for produce of unique and distinctive tastes and aromas.
- 
+                    with the Mediterranean climate of the region, have proved nourishing sources for produce of unique and distinctive tastes and aromas. <br>
+                    <strong>Est. in 1987, Santorini</strong> 
                  </p>
 
+                <p><strong>Our team</strong></p>
                 <table>
-                    <h3>Our team</h3>
-                    <br> <br>
                     <tr>
                         <td id="ivanchef">
                             <strong>Ivan</strong> <br>
+                            <img src="/img/chef-ivan.jpg" alt="Ivan" width="400" height="auto"> <br>
                             American chef, restaurateur, and reality television personality. <br>
                             He first gained recognition in the restaurant business as a three-time <br>
                             nominee for the James Beard Award. In 2004, he was named to Food & Wine's <br>
@@ -57,8 +59,10 @@
                             to receive four stars from a major publication. 
                             <br> <strong>Executive Chef</strong>
                         </td>
+                        
                         <td id="roxychef">
                             <strong>Roxy</strong> <br>
+                            <img src="img/chef-roxy.jpg" alt="Roxy" width="400" height="auto"> <br>
                             American chef, author, and television personality.
                             <br> She is the chef, founder,
                             owner, and CEO of Milk Bar, the sister bakery to the Momofuku restaurant group,<br>
@@ -68,15 +72,23 @@
                             Innovative Women in Food and Drink" in 2014.
                             <br> <strong>Chef de Cuisine</strong>
                         </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
                         <td id="dobbychef">
                             <strong>Dobby</strong> <br>
+                            <img src="/img/chef-dobby.jfif" alt="Dobby" width="400" height="auto"> <br>
                             Mexican celebrity chef, restaurateur, television personality, <br>
-                            cookbook author and philanthropist. He is the executive chef <br>
+                            cookbook author and philanthropist. She is the executive chef <br>
                             and part-owner of the Mexican restaurant Johnny Sánchez in New Orleans.
                             <br> <strong>Sous Chef</strong>
                         </td>
+                        
                         <td id="harrychef">
                             <strong>Harry</strong> <br>
+                            <img src="/img/chef-harry.jpg" alt="Harry" width="400" height="auto"> <br>
                             American chef who won the first season of the US version of MasterChef in 2010. <br>
                             Miller was named the first ever American MasterChef winner by MasterChef judges, <br>
                             Gordon Ramsay, Graham Elliot, and Joe Bastianich.
@@ -110,6 +122,14 @@
                     </tr>
                 </table>
 
+                <h4>Salad.</h4>
+                <table>
+                    <tr>
+                        <td><img src="/img/salad1.jpg" alt="Salad1" width="400" height="auto"><br>Greek salad</td>
+                        <td><img src="/img/salad2.jpg" alt="Salad2" width="400" height="auto"><br>Cesar salad</td>
+                    </tr>
+                </table>
+
                 <h4>Dessert.</h4>
                 <table>
                     <tr>
@@ -128,7 +148,7 @@
                             <label>Service type</label> 
                         </div>
                         <div>
-                            <input list="service-list" type="text">
+                            <input list="service-list" type="text" required>
                             <datalist id="service-list">
                                 <option value="Feedback">
                                 <option value="Booking">
@@ -136,12 +156,12 @@
                         </div>
 
                         <div>
-                            <label for="text-field">Type your feedback or booking preferences here!</label> <br>
-                            <input type="text" name="text-field" id="service-text-field" required> <br>
-                            <label for="email-field">Leave your email here for us to contact you!</label> <br>
-                            <input type="email" name="email-field" id="service-text-field" required> <br>
-                            <label for="phone-field"> ... or your phone-number:</label> <br>
-                            <input type="tel" name="phone-number-field" id="service-text-field" required> <br>
+                            <label for="textfield">Type your feedback or booking preferences here!</label> <br>
+                            <input type="text" name="text-field" id="textfield" required > <br>
+                            <label for="emailfield">Leave your email here for us to contact you!</label> <br>
+                            <input type="email" name="email-field" id="emailfield" required> <br>
+                            <label for="telfield"> ... or your phone-number:</label> <br>
+                            <input type="tel" name="tel-field" id="telfield" required> <br>
                         </div> <br>
 
                         
@@ -150,17 +170,34 @@
                 </form>
             </section>
 
-            <section id="delivery">
-                <h3>.delivery</h3>
-                <h4>(only in the city borders of Athens)</h4>
+            <section id="feedbacks">
+                <fieldset>
+                    <legend>Our guests about us</legend>
+                    <table>
+                            <tr>
+                                <td><img src="/img/guest-1.jpg" alt="Guest-1" width="auto" height="80"> <br>
+                                <strong>Ivan</strong>
+                                    <aside>
+                                        Breath-taking! Words can't describe the beauty of this restaurant!
+                                    </aside> <br>
+                                </td>
+                            </tr> 
+
+                            <tr>
+                                <td><img src="/img/guest-2.jpg" alt="Guest-2" width="auto" height="80"> <br>
+                                    <strong>Roxolana</strong>
+                                    <aside>
+                                        Pure perfection!
+                                    </aside>
+                                </td>
+                            </tr>
+                    </table>
+                </fieldset>
             </section>
-
-            <form action="https://formspree.io/f/xbjwpkwo" method="POST"></form>
-
-
-
         </main>
 
-        
+        <footer>
+            <sub>Est. in 1987, Santorini. This web-site is a property of I.V., all rights reserved.</sub>
+        </footer>
     </body>
 </html>
