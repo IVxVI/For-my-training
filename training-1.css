@@ -1,9 +1,58 @@
-body {
-    background-color: azure;
+body, html {
+    background-image: url(/img/bgd2.jpg);
+    background-position: center;
+    background-repeat:inherit;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 54px;
+    font-weight: 900;
+    text-align: flex-start;
+    margin-left: 20%;
+    color:whitesmoke;
+
+}
+
+
+#navigation-menu {
+    font-family: 'Satisfy', cursive;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    color: transparent;
+    margin-right: -20%;
+    margin-top: -10%;
+}
+
+a {
+    color: whitesmoke;
+    flex-direction: row;
+    justify-content: right;
 }
 
 #menu img {
     height: auto;
     width: 300px;
     display: flexbox;
+}
+
+* {
+    color: whitesmoke;
+    font-family: 'Satisfy', cursive;
+}
+
+.home-header {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -2%;
+}
+
+p:first-of-type {
+
+    display: inline-flex;
 }
