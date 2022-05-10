@@ -61,7 +61,7 @@ a {
     margin-top: 20%;
 }
 
-p:first-of-type {
+.restaurant-description {
     border-style: groove;
     display: flex;
     justify-content: center;
@@ -69,4 +69,56 @@ p:first-of-type {
     align-items: flex-end;
     margin: -25% 0 10% 0;
     font-size: 30px;
+}
+
+#team-header {
+    font-size: 32px;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-style: ridge;
+    border-width: 4px;
+    border-color: beige;
+}
+
+#ivanchef {
+    justify-content: flex-start;
+    align-self: center;
+    order: 1;
+    text-align: center;
+    font-size: 24px;
+}
+
+#roxychef {
+    justify-content: flex-end;
+    align-self: center;
+    order: 2;
+    text-align: center;
+    font-size: 24px;
+}
+
+#donnachef {
+    justify-content: flex-start;
+    align-self: center;
+    order: 3;
+    text-align: center;
+    font-size: 24px;
+}
+
+#rickchef {
+    justify-content: flex-end;
+    align-self: center;
+    order: 2;
+    text-align: center;
+    font-size: 24px;
+}
+
+.team img {
+    width: 400px;
+    height: auto;
+    border-radius: 100px;
 }
